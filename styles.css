@@ -1,0 +1,25 @@
+.main-container {
+    max-width: 820px;
+}
+
+.form-control:focus {
+    border-color: rgba(100, 183, 255, 0.5);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(100, 183, 255, 0.5);
+}
+
+.form-img {
+    margin-bottom: 0.25rem;
+}
+
+.percentage-addon {
+    margin-left: -90px !important;
+    color: #666;
+    z-index: 1;
+}
+#inputDmgModifier {
+    padding-right: 85px;
+}
+
+#pDpsBonus {
+    padding-top: 0.25rem;
+}

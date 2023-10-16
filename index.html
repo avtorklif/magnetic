@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abyssal Magnetic</title>
+    <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="shortcut icon" type="image/png" href="img/abyssal.png">
+</head>
+<body>
+<div class="container main-container mt-5">
+    <div class="row">
+        <div class="col">
+            <span>
+                <img src="img/dmg.png" alt="dmg" class="form-img"/>
+                <label for="inputDmgModifier" class="form-label">Damage modifier %</label>
+            </span>
+            <input type="text" class="form-control" id="inputDmgModifier" onchange="handleInputs()"
+                   onfocus="this.select()" oninput="handleInputs()">
+        </div>
+        <div class="col">
+            <span>
+                <img src="img/rof.png" alt="rof" class="form-img"/>
+                <label for="inputRateOfFireBonus" class="form-label">Rate of fire bonus</label>
+            </span>
+            <input type="text" class="form-control" id="inputRateOfFireBonus" onchange="handleInputs()"
+                   onfocus="this.select()"
+                   oninput="handleInputs()">
+        </div>
+        <div class="col">
+            <div class="form-label">
+            <span class="form-label">
+                <img src="img/dmg.png" alt="dmg" class="form-img"/>
+                <span>DPS bonus</span>
+            </span>
+            </div>
+            <p id="pDpsBonus">12</p>
+        </div>
+    </div>
+
+</div>
+<script>
+    initialize();
+</script>
+</body>
+</html>
